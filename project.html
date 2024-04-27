@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Potato Fries</title>
+    <style>
+      body {
+        background-color: rgb(254, 194, 0, 0.25);
+      }
+      h1 {
+        text-align: center;
+        line-height: 15px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 25px;
+        line-height: 50px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 6px;
+        box-shadow: 4px 3px 10px rgb(0, 0, 0, 0.3);
+        max-width: 100%;
+      }
+      h3 {
+        text-align: center;
+        font-size: 25px;
+      }
+      a {
+        color: #f8b517;
+        padding: 20px;
+        font-size: 17px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border-radius: 6px;
+        padding: 10px 20px;
+        color: #ffffff;
+        background: #f8b517;
+        border: none;
+        font-size: 15px;
+        box-shadow: 4px 3px 10px rgb(0, 0, 0, 0.3);
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: #ffffff;
+        transition: all 200ms ease-in-out;
+        color: #fec239;
+      }
+      a:hover {
+        color: rgb(221, 90, 90);
+        transition: all 200ms ease-in-out;
+      }
+      .container {
+        border-radius: 6px;
+        background-color: white;
+        margin: 50px;
+        padding: 25px;
+      }
+      .story {
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 20px;
+        text-align: justify;
+      }
+      .signature {
+        text-align: center;
+      }
+      .recipe {
+        margin: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sweet Potato Fries🍟</h1>
+      <h2><em>Crispy, seasoned and baked right! Yum!</em>😋</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/839/original/baked-sweet-potato-fries-1.jpg?1712878081"
+        alt="baked sweet potato fries with side of fry sauce"
+      />
+      <h3>A healthier alternative to regular fries</h3>
+      <p class="story">
+        Fried sweet potato features in a variety of dishes and cuisines
+        including the popular sweet potato fries, a variation of French fries
+        using sweet potato instead of potato. Fried sweet potatoes are known as
+        patates in Guinean cuisine, where they are more popular than potatoes
+        and more commonly used to make fries.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Fried_sweet_potato"
+        target="_blank"
+        class="learn-more"
+        >Learn more on Wikipedia</a
+      >
+      <div class="recipe"><button>👉🏽 Recipe Here</button></div>
+      <p class="signature">This page was built by Ashley Singletary</p>
+    </div>
+    <script>
+      function recipe() {
+        let name = prompt("What is your name?");
+        let email = prompt("what is your email address?");
+
+        alert("Thank you " + name + "! Recipe sent, ☺ Enjoy!");
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", recipe);
+    </script>
+  </body>
+</html>
